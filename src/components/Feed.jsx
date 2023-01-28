@@ -6,7 +6,12 @@ import Videos from "./Videos";
 import { fetchFromApi } from "../utils/fetchFromApi";
 
 const Feed = () => {
-  useEffect(() => {}, []);
+   
+  const [selectedCategory, setSelectedCategory] = useState('New')
+
+  useEffect(() => {
+    fetchFromApi(`search?part=snippet&q=${selectedCategory}`)
+  }, [selectedCategory]);
 
   return (
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
