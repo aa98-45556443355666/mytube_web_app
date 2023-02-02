@@ -6,11 +6,14 @@ import Videos from "./Videos";
 import { fetchFromApi } from "../utils/fetchFromApi";
 
 const Feed = () => {
-   
-  const [selectedCategory, setSelectedCategory] = useState('New')
+  const [selectedCategory, setSelectedCategory] = useState("New");
+
+  const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetchFromApi(`search?part=snippet&q=${selectedCategory}`)
+    fetchFromApi(`search?part=snippet&q=${selectedCategory}`).then((data) => {
+      setVideos(data.items);
+    });
   }, [selectedCategory]);
 
   return (
@@ -22,7 +25,10 @@ const Feed = () => {
           px: { sx: 0, md: 2 },
         }}
       >
-        <SideBar />
+        <SideBar
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+        />
         <Typography
           className="copyright"
           variant="body2"
@@ -39,10 +45,10 @@ const Feed = () => {
           mb={2}
           sx={{ color: "whitesmoke" }}
         >
-          New <span style={{ color: "#fc1502" }}>videos</span>
+          {selectedCategory} <span style={{ color: "#fc1502" }}>videos</span>
         </Typography>
 
-        <Videos videos={[]} />
+        <Videos videos={videos} />
       </Box>
     </Stack>
   );
