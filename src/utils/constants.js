@@ -16,7 +16,6 @@ export const logo = "https://i.ibb.co/s9Qys2j/logo.png";
 
 export const categories = [
   { name: "New", icon: <HomeIcon /> },
-
   { name: "Music", icon: <MusicNoteIcon /> },
   { name: "Education", icon: <SchoolIcon /> },
   { name: "Podcast", icon: <GraphicEqIcon /> },
@@ -31,11 +30,10 @@ export const categories = [
   { name: "Crypto", icon: <DeveloperModeIcon /> },
 ];
 
-export const demoThumbnailUrl =
-  "https://img-b.udemycdn.com/notices/web_banner/slide_1_image_udlite/abcc3e61-5987-43d8-a957-3de15f45f796.png";
+export const demoThumbnailUrl = "https://i.ibb.co/G2L2Gwp/API-Course.png";
 export const demoChannelUrl = "/channel/UCmXmlB4-HJytD7wek0Uo97A";
 export const demoVideoUrl = "/video/GDa8kZLNhJ4";
-export const demoChannelTitle = "MyReact Page";
-export const demoVideoTitle = "Building a youtube clone page.";
+export const demoChannelTitle = "My Youtube Clone";
+export const demoVideoTitle = "Build a youtube Clone using Rapid API";
 export const demoProfilePicture =
   "http://dergipark.org.tr/assets/app/images/buddy_sample.png";
