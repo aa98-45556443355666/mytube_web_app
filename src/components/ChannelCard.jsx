@@ -8,7 +8,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
   <Box
     sx={{
       boxShadow: "none",
-      borderRadius: "20px",
+      borderRadius: "21px",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
