@@ -1,16 +1,16 @@
-# Youtube Clone Web App
+# Mytube Web App
 
-This is a YouTube clone app built with React and the YouTube v3 Rapid API. It allows users to search for videos, display and play the videos.
+This is a Mytube app built with React and the YouTube v3 Rapid API. It allows users to search for videos, display and play the videos.
 
 ## Installation
 
 1. Clone the repository to your local machine:
 
-   `git clone https://github.com/aa98-45556443355666/youtube_clone_web_app.git`
+   `git clone https://github.com/aa98-45556443355666/mytube_web_app.git`
 
 2. Navigate to the project directory:
 
-   `cd youtube_clone_web_app`
+   `cd mytube_web_app`
 
 3. Install the dependencies using npm:
 
